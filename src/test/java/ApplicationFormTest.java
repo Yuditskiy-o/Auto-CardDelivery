@@ -111,7 +111,7 @@ public class ApplicationFormTest {
         }
 
         @Test
-        void shouldNotSubmitRequestIfCityInIrrelevantSymbols() {
+        void shouldNotSubmitRequestIfCityWithIrrelevantSymbols() {
             form.$(cssSelector("[data-test-id=city] input")).sendKeys("Novosibirsk");
             form.$(cssSelector("[name=name]")).sendKeys("Олег Юдыцкий");
             form.$(cssSelector("[name=phone]")).sendKeys("+79137049918");
