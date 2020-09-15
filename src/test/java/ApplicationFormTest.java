@@ -185,7 +185,7 @@ public class ApplicationFormTest {
             form.$(cssSelector("[name=phone]")).sendKeys("+79137049918");
             form.$(cssSelector("[data-test-id=agreement]")).click();
             form.$(byText("Забронировать")).click();
-            $(byText("Поле обязательно для заполнения")).waitUntil(Condition.visible, 15000);
+            $(byText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.")).waitUntil(Condition.visible, 15000);
         }
 
         @Test
@@ -194,7 +194,7 @@ public class ApplicationFormTest {
             form.$(cssSelector("[name=phone]")).sendKeys("+79137049918");
             form.$(cssSelector("[data-test-id=agreement]")).click();
             form.$(byText("Забронировать")).click();
-            $(byText("Поле обязательно для заполнения")).waitUntil(Condition.visible, 15000);
+            $(byText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.")).waitUntil(Condition.visible, 15000);
         }
 
         @Test
